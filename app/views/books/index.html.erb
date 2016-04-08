@@ -5,8 +5,8 @@
   <div class="row">
     <div class="col-md-12">
       <div class="panel panel-default">
-        <p class="panel-heading"><strong><%= link_to book.Book_name, book_chapters_path(book) %></strong></p><br>
-        <p class="panel-body"><%= book.Book_description %></p><br>
+        <p class="panel-heading"><strong><%= link_to book.book_name, book_chapters_path(book) %></strong></p><br>
+        <p class="panel-body"><%= book.book_description %></p><br>
         <%= link_to 'edit', edit_book_path(book) %>
       </div>
     </div>
