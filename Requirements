@@ -1,0 +1,51 @@
+4. Working
+- version 0 - CRUD operations
+- version 1 - seeds file (5 books, 8-12 chapters in each book, 5-10 sections in each chapter,
+2-10 paragraphs in each section). You may refer to the students_db seed file for reference.​
+Hackathon Starts:​ Friday 11:30am
+​Hackathon Ends:​ Saturday 4pm
+​Checkpoint 1:​ Friday evening
+​Checkpoint 2:​ Saturday 11am
+​Demo​: Saturday 4pm (edited)
+
+User should be able to create using forms:
+Book:
+-Create new book
+-Edit existing book
+-Delete book
+-Add overview of the book
+-Preview the book
+
+For a selected book, the author should be able to
+
+Chapters:
+-Create new chapter
+-Edit existing chapter
+-Delete chapter
+-Add overview of the chapter
+
+For a selected chapter, the author should be able to
+
+Sections:
+-Create new section
+-Edit existing section
+-Delete section
+-Add overview of the section
+-Add content to the section
+
+*********db**********
+
+Books:
+Book_name: String
+Book_description: Text
+
+Chapters:
+Chapter_name: String
+Chapter_description: Text
+Book_ID: num
+
+Sections:
+Section_name: String
+Section_description: Text
+Section_content: Text
+Chapter_ID: num
