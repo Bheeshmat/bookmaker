@@ -1,14 +1,7 @@
-<h1>Create new book</h1>
 <div class="container">
-  <div class="form-horizontal">
-    <%= simple_form_for @book do |f| %>
+  <h1>Create new book</h1>
 
-    <%= f.input :Book_name %>
-    <%= f.input :Book_description %>
-
-    <%= f.button :submit %>
-
-    <% end %>
-  </div>
+    <%= render 'form' %>
+    
   <%= link_to 'back', books_path %>
 </div>

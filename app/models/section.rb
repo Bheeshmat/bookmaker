@@ -1,3 +1,3 @@
 class Section < ActiveRecord::Base
-  belongs_to :Chapter
+  belongs_to :chapter
 end

@@ -1,8 +1,8 @@
 class CreateBooks < ActiveRecord::Migration
   def change
     create_table :books do |t|
-      t.string :Book_name
-      t.text   :Book_description
+      t.string :book_name
+      t.text   :book_description
 
       t.timestamps null: false
     end

@@ -14,31 +14,31 @@
 ActiveRecord::Schema.define(version: 20160408084937) do
 
   create_table "books", force: :cascade do |t|
-    t.string   "Book_name"
-    t.text     "Book_description"
+    t.string   "book_name"
+    t.text     "book_description"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
   end
 
   create_table "chapters", force: :cascade do |t|
-    t.string   "Chapter_name"
-    t.text     "Chapter_description"
-    t.integer  "Book_id"
+    t.string   "chapter_name"
+    t.text     "chapter_description"
+    t.integer  "book_id"
     t.datetime "created_at",          null: false
     t.datetime "updated_at",          null: false
   end
 
-  add_index "chapters", ["Book_id"], name: "index_chapters_on_Book_id"
+  add_index "chapters", ["book_id"], name: "index_chapters_on_book_id"
 
   create_table "sections", force: :cascade do |t|
-    t.string   "Section_name"
-    t.text     "Section_description"
-    t.text     "Section_content"
-    t.integer  "Chapter_id"
+    t.string   "section_name"
+    t.text     "section_description"
+    t.text     "section_content"
+    t.integer  "chapter_id"
     t.datetime "created_at",          null: false
     t.datetime "updated_at",          null: false
   end
 
-  add_index "sections", ["Chapter_id"], name: "index_sections_on_Chapter_id"
+  add_index "sections", ["chapter_id"], name: "index_sections_on_chapter_id"
 
 end
