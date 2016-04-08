@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>Edit book</h1>
+  <div class="form-horizontal">
+    <%= simple_form_for @book do |f| %>
+
+    <%= f.input :Book_name %>
+    <%= f.input :Book_description %>
+
+    <%= f.button :submit %>
+
+    <% end %>
+  </div>
+  <%= link_to 'back', books_path %>
+</div>
