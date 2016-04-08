@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 # Default project gems
 
 gem 'rails', '4.2.5.1'
-gem 'pg', '~> 0.15'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
@@ -16,6 +15,7 @@ gem 'bootstrap-sass', '~> 3.3.6'
 # Project specific gems
 group :development, :test do
   gem 'byebug'
+  gem 'sqlite3'
 end
 
 group :development do
@@ -28,4 +28,5 @@ end
 group :production do
 # Project specific gems; required by Heroku for development
   gem 'rails_12factor'
+  gem 'pg'
 end
